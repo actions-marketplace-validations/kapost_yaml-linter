@@ -1,0 +1,9 @@
+name: kapost-yaml-linter
+description: "This action runs a yaml linter."
+branding:
+  icon: 'book-open'
+  color: 'green'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  

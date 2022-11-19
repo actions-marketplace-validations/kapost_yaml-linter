@@ -1,0 +1,15 @@
+on: push
+name: Yaml Lint
+jobs:
+  yaml_lint:
+    name: Yaml Lint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      
+      - name: Yaml Lint
+        uses: kapost/yaml-linter@v1
+        env:
+          CUSTOM_CONFIG: custom-yaml.yml
+          TARGET_DIRECTORY: ./my-directory
