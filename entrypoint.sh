@@ -8,3 +8,4 @@ elif [ -n $TARGET_DIRECTORY ] && [ -z $CUSTOM_CONFIG ]; then
     yamllint $TARGET_DIRECTORY
 else
     yamllint .
+fi
